@@ -35,9 +35,7 @@ if __name__ == '__main__':
     plot_gmean_rates(usa_cases, title_beginning + 'USA',
                      filename='./Plots/USA.png')
 
-    df = df[df['date'] >= '2020-02-15']
-
-    df = df[df['date'] >= '2020-02-15']
+    df = df[df['date'] >= '2020-02-23']
     for state in df['state'].unique():
         title = title_beginning + state
         plot_gmean_rates(df[df['state']==state], title,
